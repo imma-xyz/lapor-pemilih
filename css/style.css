@@ -142,12 +142,12 @@ main {
     transition: 0.2s;
 }
 
-.lapor-list a:hover {
+.lapor-list > a:hover {
     background: #f7f7f7;
     border-color: #e31e24;
 }
 
-.lapor-list span {
+.lapor-list > a span {
     display: block;
 
     font-size: 12px;
