@@ -164,19 +164,15 @@ main {
 
 .layanan-item img {
     display: block;
-
     width: 100%;
     height: auto;
-
     margin-bottom: 12px;
 }
 
 .layanan-item > a:last-child {
     display: block;
-
     font-size: 14px;
     font-weight: 600;
-
     line-height: 1.4;
 }
 
@@ -186,13 +182,10 @@ main {
 
 .layanan-item small {
     display: block;
-
     font-size: 12px;
     font-weight: normal;
-
     margin-top: 2px;
 }
-
 
 /* ================= STATISTIK PELAPORAN ================= */
 
