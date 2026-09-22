@@ -316,17 +316,44 @@ main {
     width: 100%;
     max-width: 1100px;
     margin: auto;
-    padding: 45px 30px 50px;
+
+    padding: 24px 30px 18px;
 }
 
 
-/* ================= BAGIAN ATAS FOOTER ================= */
+/* ================= SEMUA INFORMASI SEJAJAR ================= */
+
+/*
+   Urutan:
+   1. Lokasi + alamat
+   2. Media sosial
+   3. Website + kontak
+   4. Jam pelayanan
+   5. Statistik pengunjung
+*/
 
 .site-footer .info-top {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 50px;
+
+    grid-template-columns:
+        1.7fr
+        1fr
+        1.35fr
+        0.85fr
+        0.75fr;
+
+    column-gap: 28px;
+
     align-items: start;
+}
+
+
+/*
+   .info-bottom tetap di HTML,
+   tetapi anak-anaknya dimasukkan ke grid .info-top
+*/
+.site-footer .info-bottom {
+    display: contents;
 }
 
 
@@ -335,37 +362,50 @@ main {
 .site-footer .location {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 16px;
+
+    min-width: 0;
 }
 
 .site-footer .map-box {
-    width: 120px;
-    height: 120px;
-    flex: 0 0 120px;
+    width: 135px;
+    height: 115px;
+
+    flex: 0 0 135px;
+
     overflow: hidden;
+
     border: 1px solid #eeeeee;
 }
 
 .site-footer .map-box iframe {
     width: 100%;
     height: 100%;
+
     border: 0;
+    display: block;
 }
 
 .site-footer .address {
-    padding-top: 3px;
-    font-size: 12px;
-    line-height: 1.6;
+    padding-top: 1px;
+
+    font-size: 10px;
+    line-height: 1.55;
+
     color: #555;
 }
 
 .site-footer .address strong {
     display: block;
-    font-size: 13px;
-    font-style: normal;
+
+    font-size: 11px;
+    line-height: 1.35;
+
     font-weight: 600;
+
     color: #222;
-    margin-bottom: 5px;
+
+    margin-bottom: 6px;
 }
 
 
@@ -374,20 +414,30 @@ main {
 .site-footer .contact-list {
     display: flex;
     flex-direction: column;
-    gap: 9px;
+
+    gap: 8px;
+
+    min-width: 0;
 }
 
 .site-footer .contact-item {
     display: grid;
-    grid-template-columns: 26px 1fr;
+
+    grid-template-columns: 25px 1fr;
+
     align-items: center;
-    column-gap: 12px;
-    min-height: 24px;
+
+    column-gap: 9px;
+
+    min-height: 25px;
+
+    min-width: 0;
 }
 
 .site-footer .icon {
-    width: 24px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
+
     border-radius: 3px;
 
     display: flex;
@@ -395,8 +445,12 @@ main {
     justify-content: center;
 
     color: #fff;
+
     font-size: 13px;
 }
+
+
+/* ================= WARNA ICON ================= */
 
 .site-footer .instagram {
     background: #ed174c;
@@ -430,54 +484,64 @@ main {
     background: #686868;
 }
 
+
+/* ================= TEKS KONTAK ================= */
+
 .site-footer .contact-text {
     color: #555;
-    font-size: 12px;
-    line-height: 1.4;
+
+    font-size: 9px;
+    line-height: 1.35;
+
+    overflow-wrap: anywhere;
 }
 
 
-/* ================= JAM + STATISTIK ================= */
+/* ================= JAM PELAYANAN ================= */
 
-.site-footer .info-bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
-    margin-top: 45px;
+.site-footer .hours {
+    min-width: 0;
+
+    font-size: 9px;
+    line-height: 1.5;
+
+    color: #555;
 }
 
 .site-footer .section-title {
-    font-size: 13px;
-    font-weight: 600;
-    color: #222;
-    margin-bottom: 15px;
-}
+    font-size: 10px;
 
-.site-footer .hours {
-    font-size: 12px;
-    line-height: 1.5;
-    color: #555;
+    font-weight: 600;
+
+    color: #222;
+
+    margin-bottom: 8px;
 }
 
 .site-footer .hours p {
-    margin: 0 0 15px;
+    margin: 0 0 8px;
 }
 
 
 /* ================= STATISTIK PENGUNJUNG ================= */
 
+.site-footer .stats {
+    min-width: 0;
+}
+
 .site-footer .counter {
-    display: inline-block;
+    display: block;
 
     width: 82px;
-    height: 26px;
 
     border: 1px solid #ddd;
+
     background: #fafafa;
 
     color: #555;
 
-    font-size: 9px;
+    font-size: 8px;
+
     line-height: 1.1;
 
     padding: 3px 4px;
@@ -485,7 +549,12 @@ main {
 
 .site-footer .counter-row {
     display: flex;
+
     justify-content: space-between;
+
+    align-items: center;
+
+    min-height: 12px;
 }
 
 
@@ -493,27 +562,33 @@ main {
 
 .site-footer .message-area {
     max-width: 1100px;
+
     margin: auto;
+
     padding: 0 30px;
 }
 
 .site-footer .red-line {
     width: 100%;
+
     height: 1px;
+
     background: #e31e24;
 }
 
 .site-footer .message {
-    min-height: 70px;
+    min-height: 42px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
     color: #e31e24;
 
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 11px;
+
+    font-weight: 600;
 
     text-align: center;
 
@@ -525,40 +600,87 @@ main {
 
 .site-footer .copyright {
     width: 100%;
-    min-height: 55px;
+
+    min-height: 45px;
 
     background: #fafafa;
-    color: #666;
+
+    color: #777;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
     text-align: center;
 
-    font-size: 11px;
+    font-size: 9px;
+
     font-weight: normal;
 
-    padding: 15px 20px;
+    padding: 10px 20px;
 }
 
-/* ================= FOOTER TABLET ================= */
+
+/* =========================================================
+   FOOTER TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .site-footer .info-top {
+        grid-template-columns:
+            1.5fr
+            1fr
+            1.2fr;
+
+        row-gap: 25px;
+    }
+
+    /*
+       Karena grid berubah menjadi 3 kolom,
+       jam dan statistik turun ke baris kedua.
+    */
+
+    .site-footer .hours {
+        grid-column: 2;
+    }
+
+    .site-footer .stats {
+        grid-column: 3;
+    }
+
+}
+
+
+/* =========================================================
+   FOOTER TABLET KECIL
+   ========================================================= */
 
 @media (max-width: 800px) {
 
     .site-footer .footer-info {
-        padding: 40px 20px;
+        padding: 30px 20px;
     }
 
     .site-footer .info-top {
-        grid-template-columns: 1fr;
-        row-gap: 35px;
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 25px;
     }
 
-    .site-footer .info-bottom {
-        grid-template-columns: 1fr;
-        row-gap: 35px;
-        margin-top: 35px;
+    .site-footer .location {
+        grid-column: 1 / 3;
+    }
+
+    .site-footer .hours {
+        grid-column: auto;
+    }
+
+    .site-footer .stats {
+        grid-column: auto;
     }
 
     .site-footer .message-area {
@@ -568,36 +690,67 @@ main {
 }
 
 
-/* ================= FOOTER HP ================= */
+/* =========================================================
+   FOOTER HP
+   ========================================================= */
 
 @media (max-width: 600px) {
-
-    .lapor-list {
-        grid-template-columns: 1fr;
-    }
 
     .site-footer {
         font-size: 11px;
     }
 
-    .site-footer .map-box {
-        width: 105px;
-        height: 110px;
-        flex-basis: 105px;
+    .site-footer .info-top {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 22px;
     }
 
     .site-footer .location {
+        display: flex;
+
+        align-items: flex-start;
+
         gap: 15px;
+    }
+
+    .site-footer .map-box {
+        width: 105px;
+        height: 105px;
+
+        flex-basis: 105px;
     }
 
     .site-footer .contact-item {
         grid-template-columns: 26px 1fr;
-        column-gap: 12px;
+
+        column-gap: 10px;
     }
 
     .site-footer .message {
-        min-height: 65px;
+        min-height: 55px;
+
         padding: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   FOOTER HP KECIL
+   ========================================================= */
+
+@media (max-width: 430px) {
+
+    .site-footer .location {
+        flex-direction: column;
+    }
+
+    .site-footer .map-box {
+        width: 100%;
+        height: 130px;
     }
 
 }
