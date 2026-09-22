@@ -222,29 +222,115 @@ main {
 
 
 /* =========================================================
-   INTRO
+   INTRO / HERO
    ========================================================= */
 
 .intro {
+    position: relative;
+    margin: 0 30px;
+    padding: 72px 40px 68px;
     text-align: center;
-    padding: 80px 30px 60px;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(227, 30, 36, .10), transparent 28%),
+        radial-gradient(circle at 85% 75%, rgba(0, 91, 150, .10), transparent 30%),
+        linear-gradient(135deg, #f8fbff 0%, #ffffff 48%, #fff8f8 100%);
+    border: 1px solid #edf0f5;
+    border-radius: 0 0 18px 18px;
+    overflow: hidden;
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #e31e24, #b51218, #e31e24);
+}
+
+.intro::after {
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    right: -80px;
+    top: -100px;
+    border-radius: 50%;
+    background: rgba(227, 30, 36, .06);
+}
+
+.intro h2,
+.intro h3,
+.intro p {
+    position: relative;
+    z-index: 1;
 }
 
 .intro h2 {
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 12px;
+    margin: 0 0 14px;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: .2px;
+    color: #222;
 }
 
 .intro h3 {
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 25px;
+    margin: 0 auto 22px;
+    font-size: 22px;
+    line-height: 1.35;
+    font-weight: 600;
+    letter-spacing: .4px;
+    color: #e31e24;
 }
 
 .intro p {
+    max-width: 720px;
+    margin: 0 auto;
     font-size: 16px;
+    line-height: 1.7;
+    font-weight: 500;
     color: #555;
+}
+
+@media (max-width: 800px) {
+    .intro {
+        margin: 0 20px;
+        padding: 55px 25px 50px;
+    }
+
+    .intro h2 {
+        font-size: 24px;
+    }
+
+    .intro h3 {
+        font-size: 18px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        margin: 0 15px;
+        padding: 45px 18px 42px;
+        border-radius: 0 0 14px 14px;
+    }
+
+    .intro h2 {
+        font-size: 21px;
+    }
+
+    .intro h3 {
+        font-size: 16px;
+    }
+
+    .intro p {
+        font-size: 13px;
+    }
 }
 
 
