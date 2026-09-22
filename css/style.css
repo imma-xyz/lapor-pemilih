@@ -430,9 +430,9 @@ main {
 .site-footer .address {
     padding-top: 1px;
 
-    font-size: 10px;
+    font-size: 12px;
 
-    line-height: 1.45;
+    line-height: 1.5;
 
     color: #555;
 
@@ -442,7 +442,7 @@ main {
 .site-footer .address strong {
     display: block;
 
-    font-size: 11px;
+    font-size: 13px;
 
     line-height: 1.35;
 
@@ -450,7 +450,7 @@ main {
 
     color: #222;
 
-    margin-bottom: 6px;
+    margin-bottom: 7px;
 }
 
 
@@ -463,7 +463,7 @@ main {
 
     flex-direction: column;
 
-    gap: 7px;
+    gap: 8px;
 
     min-width: 0;
 }
@@ -471,21 +471,21 @@ main {
 .site-footer .contact-item {
     display: grid;
 
-    grid-template-columns: 25px 1fr;
+    grid-template-columns: 27px 1fr;
 
     align-items: center;
 
     column-gap: 10px;
 
-    min-height: 25px;
+    min-height: 27px;
 
     min-width: 0;
 }
 
 .site-footer .icon {
-    width: 25px;
+    width: 27px;
 
-    height: 25px;
+    height: 27px;
 
     border-radius: 3px;
 
@@ -497,7 +497,7 @@ main {
 
     color: #fff;
 
-    font-size: 13px;
+    font-size: 14px;
 }
 
 
@@ -545,9 +545,9 @@ main {
 .site-footer .contact-text {
     color: #555;
 
-    font-size: 9px;
+    font-size: 11px;
 
-    line-height: 1.35;
+    line-height: 1.4;
 
     white-space: nowrap;
 
@@ -568,25 +568,25 @@ main {
 
     border-left: 1px solid #eeeeee;
 
-    font-size: 9px;
+    font-size: 11px;
 
-    line-height: 1.45;
+    line-height: 1.5;
 
     color: #555;
 }
 
 .site-footer .section-title {
-    font-size: 10px;
+    font-size: 12px;
 
     font-weight: 700;
 
     color: #222;
 
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
 
 .site-footer .hours p {
-    margin: 0 0 7px;
+    margin: 0 0 8px;
 }
 
 
@@ -607,7 +607,7 @@ main {
 .site-footer .counter {
     display: block;
 
-    width: 82px;
+    width: 92px;
 
     border: 1px solid #ddd;
 
@@ -615,11 +615,11 @@ main {
 
     color: #555;
 
-    font-size: 8px;
+    font-size: 10px;
 
-    line-height: 1.1;
+    line-height: 1.2;
 
-    padding: 3px 4px;
+    padding: 4px 5px;
 }
 
 .site-footer .counter-row {
@@ -629,7 +629,7 @@ main {
 
     align-items: center;
 
-    min-height: 12px;
+    min-height: 14px;
 }
 
 
@@ -654,7 +654,7 @@ main {
 }
 
 .site-footer .message {
-    min-height: 42px;
+    min-height: 45px;
 
     display: flex;
 
@@ -664,11 +664,13 @@ main {
 
     color: #e31e24;
 
-    font-size: 11px;
+    font-size: 13px;
 
     font-weight: 600;
 
     text-align: center;
+
+    padding: 5px 10px;
 
     border-bottom: 1px solid #eeeeee;
 }
@@ -681,7 +683,7 @@ main {
 .site-footer .copyright {
     width: 100%;
 
-    min-height: 45px;
+    min-height: 48px;
 
     background: #fafafa;
 
@@ -695,7 +697,7 @@ main {
 
     text-align: center;
 
-    font-size: 9px;
+    font-size: 11px;
 
     font-weight: normal;
 
@@ -810,7 +812,7 @@ main {
     }
 
     .site-footer .message {
-        min-height: 55px;
+        min-height: 58px;
 
         padding: 10px;
     }
