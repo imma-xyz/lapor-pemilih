@@ -227,77 +227,91 @@ main {
 
 .intro {
     position: relative;
-    margin: 0 30px;
-    padding: 72px 40px 68px;
+    margin: 28px 30px 0;
+    padding: 82px 40px 76px;
     text-align: center;
     background:
-        radial-gradient(circle at 15% 20%, rgba(227, 30, 36, .10), transparent 28%),
-        radial-gradient(circle at 85% 75%, rgba(0, 91, 150, .10), transparent 30%),
-        linear-gradient(135deg, #f8fbff 0%, #ffffff 48%, #fff8f8 100%);
-    border: 1px solid #edf0f5;
-    border-radius: 0 0 18px 18px;
+        radial-gradient(circle at 12% 18%, rgba(227, 30, 36, .12), transparent 24%),
+        radial-gradient(circle at 88% 82%, rgba(0, 91, 150, .12), transparent 27%),
+        linear-gradient(135deg, #f5f9ff 0%, #ffffff 45%, #fff7f7 100%);
+    border: 1px solid #e7ebf2;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(25, 45, 75, .08);
     overflow: hidden;
 }
 
 .intro::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    inset: 0 0 auto;
     height: 5px;
-    background: linear-gradient(90deg, #e31e24, #b51218, #e31e24);
+    background: linear-gradient(90deg, #b51218 0%, #e31e24 50%, #b51218 100%);
 }
 
 .intro::after {
     content: "";
     position: absolute;
-    width: 230px;
-    height: 230px;
-    right: -80px;
-    top: -100px;
+    width: 280px;
+    height: 280px;
+    right: -120px;
+    top: -145px;
+    border: 30px solid rgba(227, 30, 36, .045);
     border-radius: 50%;
-    background: rgba(227, 30, 36, .06);
 }
 
 .intro h2,
 .intro h3,
 .intro p {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .intro h2 {
-    margin: 0 0 14px;
+    margin: 0 auto 16px;
+    max-width: 900px;
     font-size: 30px;
-    line-height: 1.3;
+    line-height: 1.25;
     font-weight: 600;
-    letter-spacing: .2px;
-    color: #222;
+    letter-spacing: .3px;
+    color: #20252b;
 }
 
 .intro h3 {
-    margin: 0 auto 22px;
-    font-size: 22px;
+    display: inline-block;
+    margin: 0 auto 24px;
+    padding: 8px 18px;
+    font-size: 21px;
     line-height: 1.35;
     font-weight: 600;
-    letter-spacing: .4px;
-    color: #e31e24;
+    letter-spacing: .5px;
+    color: #c71920;
+    background: rgba(227, 30, 36, .07);
+    border: 1px solid rgba(227, 30, 36, .13);
+    border-radius: 999px;
 }
 
 .intro p {
-    max-width: 720px;
+    max-width: 700px;
     margin: 0 auto;
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.75;
     font-weight: 500;
-    color: #555;
+    color: #555d66;
+}
+
+.intro p::before {
+    content: "✦";
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #e31e24;
 }
 
 @media (max-width: 800px) {
     .intro {
-        margin: 0 20px;
-        padding: 55px 25px 50px;
+        margin: 22px 20px 0;
+        padding: 60px 25px 55px;
+        border-radius: 17px;
     }
 
     .intro h2 {
@@ -306,6 +320,7 @@ main {
 
     .intro h3 {
         font-size: 18px;
+        padding: 7px 14px;
     }
 
     .intro p {
@@ -315,21 +330,24 @@ main {
 
 @media (max-width: 480px) {
     .intro {
-        margin: 0 15px;
-        padding: 45px 18px 42px;
-        border-radius: 0 0 14px 14px;
+        margin: 18px 15px 0;
+        padding: 48px 18px 44px;
+        border-radius: 15px;
     }
 
     .intro h2 {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .intro h3 {
-        font-size: 16px;
+        max-width: 100%;
+        font-size: 15px;
+        padding: 7px 12px;
     }
 
     .intro p {
         font-size: 13px;
+        line-height: 1.65;
     }
 }
 
