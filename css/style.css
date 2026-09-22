@@ -95,16 +95,38 @@ main {
     margin-bottom: 45px;
 }
 
-.cek-data a {
-    display: inline-block;
+.cek-data-image {
+    display: block;
 }
 
-.cek-data img {
+.cek-data-image img {
     display: block;
+
     width: 100%;
     max-width: 500px;
     height: auto;
-    margin: 0 auto;
+
+    margin: 0 auto 10px;
+}
+
+.cek-data-button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background: #e31e24;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-radius: 2px;
+
+    transition: 0.2s;
+}
+
+.cek-data-button:hover {
+    background: #c9181d;
 }
 
 /* ================= DAFTAR LAPOR ================= */
