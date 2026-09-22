@@ -541,7 +541,7 @@ main {
 
 .site-footer .address {
     padding-top: 1px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.55;
     color: #555;
     min-width: 0;
@@ -549,7 +549,7 @@ main {
 
 .site-footer .address strong {
     display: block;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.4;
     font-weight: 600;
     color: #222;
@@ -594,7 +594,7 @@ main {
 
 .site-footer .contact-text {
     color: #555;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.45;
     white-space: nowrap;
@@ -606,13 +606,13 @@ main {
     min-width: 0;
     padding-left: 15px;
     border-left: 1px solid #eeeeee;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.55;
     color: #555;
 }
 
 .site-footer .section-title {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     color: #222;
     margin-bottom: 10px;
@@ -637,9 +637,9 @@ main {
     border: 1px solid #ddd;
     background: #fafafa;
     color: #555;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.4;
-    padding: 6px 7px;
+    padding: 5px 6px;
 }
 
 .site-footer .counter-row {
@@ -667,7 +667,7 @@ main {
     align-items: center;
     justify-content: center;
     color: #e31e24;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     text-align: center;
     line-height: 1.5;
@@ -684,7 +684,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 400;
     line-height: 1.5;
     padding: 12px 20px;
@@ -758,31 +758,31 @@ main {
     }
 
     .site-footer .address {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .site-footer .address strong {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .site-footer .contact-text,
     .site-footer .hours {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .site-footer .section-title {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .site-footer .message {
         min-height: 60px;
-        font-size: 15px;
+        font-size: 13px;
         padding: 10px;
     }
 
     .site-footer .copyright {
         min-height: 55px;
-        font-size: 13px;
+        font-size: 11px;
         padding: 12px 16px;
     }
 }
