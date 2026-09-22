@@ -327,276 +327,134 @@ main {
 
 .site-footer {
     width: 100%;
-
     background: #fff;
-
     color: #222;
-
     font-family: Arial, sans-serif;
-
     border-top: 1px solid #eeeeee;
 }
 
-
-/* =========================================================
-   FOOTER INFO
-   ========================================================= */
-
-/*
-   INI ADALAH GRID UTAMA FOOTER.
-
-   Lima kolom:
-   1. Peta + alamat
-   2. Sosial media
-   3. Website + kontak
-   4. Jam pelayanan
-   5. Statistik pengunjung
-*/
-
 .site-footer .footer-info {
     width: 100%;
-
     max-width: 1100px;
-
     margin: 0 auto;
-
-    padding: 24px 10px 20px;
-
+    padding: 28px 16px 24px;
     display: grid;
-
-    grid-template-columns:
-        1.75fr
-        1.05fr
-        1.55fr
-        0.95fr
-        0.85fr;
-
+    grid-template-columns: 1.75fr 1.05fr 1.55fr 0.95fr 0.85fr;
     column-gap: 28px;
-
     align-items: start;
 }
-
-
-/*
-   .info-top dan .info-bottom hanya wrapper.
-
-   Dibuat contents supaya elemen di dalamnya
-   langsung menjadi anak visual dari grid
-   .footer-info.
-*/
 
 .site-footer .info-top,
 .site-footer .info-bottom {
     display: contents;
 }
 
-
-/* =========================================================
-   1. LOKASI + ALAMAT
-   ========================================================= */
-
 .site-footer .location {
     display: flex;
-
     align-items: flex-start;
-
     gap: 14px;
-
     min-width: 0;
 }
 
 .site-footer .map-box {
     width: 135px;
-
     height: 115px;
-
     flex: 0 0 135px;
-
     overflow: hidden;
-
     border: 1px solid #dddddd;
 }
 
 .site-footer .map-box iframe {
     display: block;
-
     width: 100%;
-
     height: 100%;
-
     border: 0;
 }
 
 .site-footer .address {
     padding-top: 1px;
-
-    font-size: 12px;
-
+    font-size: 14px;
     line-height: 1.5;
-
     color: #555;
-
     min-width: 0;
 }
 
 .site-footer .address strong {
     display: block;
-
-    font-size: 13px;
-
+    font-size: 15px;
     line-height: 1.35;
-
     font-weight: 600;
-
     color: #222;
-
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
-
-
-/* =========================================================
-   2 & 3. SOSMED / KONTAK
-   ========================================================= */
 
 .site-footer .contact-list {
     display: flex;
-
     flex-direction: column;
-
-    gap: 8px;
-
+    gap: 9px;
     min-width: 0;
 }
 
 .site-footer .contact-item {
     display: grid;
-
-    grid-template-columns: 27px 1fr;
-
+    grid-template-columns: 30px 1fr;
     align-items: center;
-
     column-gap: 10px;
-
-    min-height: 27px;
-
+    min-height: 30px;
     min-width: 0;
 }
 
 .site-footer .icon {
-    width: 27px;
-
-    height: 27px;
-
-    border-radius: 3px;
-
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     color: #fff;
-
-    font-size: 14px;
+    font-size: 15px;
 }
 
-
-/* =========================================================
-   WARNA ICON
-   ========================================================= */
-
-.site-footer .instagram {
-    background: #ed174c;
-}
-
-.site-footer .facebook {
-    background: #1877f2;
-}
-
-.site-footer .youtube {
-    background: #ff0000;
-}
-
-.site-footer .x {
-    background: #000;
-}
-
-.site-footer .website {
-    background: #000;
-}
-
-.site-footer .phone {
-    background: #686868;
-}
-
-.site-footer .whatsapp {
-    background: #16c45b;
-}
-
-.site-footer .email {
-    background: #686868;
-}
-
-
-/* =========================================================
-   TEKS KONTAK
-   ========================================================= */
+.site-footer .instagram { background: #ed174c; }
+.site-footer .facebook { background: #1877f2; }
+.site-footer .youtube { background: #ff0000; }
+.site-footer .x { background: #000; }
+.site-footer .website { background: #000; }
+.site-footer .phone { background: #686868; }
+.site-footer .whatsapp { background: #16c45b; }
+.site-footer .email { background: #686868; }
 
 .site-footer .contact-text {
     color: #555;
-
-    font-size: 11px;
-
+    font-size: 13px;
     line-height: 1.4;
-
     white-space: nowrap;
-
     overflow: hidden;
-
     text-overflow: ellipsis;
 }
 
-
-/* =========================================================
-   4. JAM PELAYANAN
-   ========================================================= */
-
 .site-footer .hours {
     min-width: 0;
-
     padding-left: 15px;
-
     border-left: 1px solid #eeeeee;
-
-    font-size: 11px;
-
+    font-size: 13px;
     line-height: 1.5;
-
     color: #555;
 }
 
 .site-footer .section-title {
-    font-size: 12px;
-
+    font-size: 14px;
     font-weight: 700;
-
     color: #222;
-
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
 .site-footer .hours p {
-    margin: 0 0 8px;
+    margin: 0 0 9px;
 }
-
-
-/* =========================================================
-   5. STATISTIK PENGUNJUNG
-   ========================================================= */
 
 .site-footer .stats {
     min-width: 0;
-
     padding-left: 0;
 }
 
@@ -606,232 +464,149 @@ main {
 
 .site-footer .counter {
     display: block;
-
-    width: 92px;
-
+    width: 105px;
     border: 1px solid #ddd;
-
     background: #fafafa;
-
     color: #555;
-
-    font-size: 10px;
-
-    line-height: 1.2;
-
-    padding: 4px 5px;
+    font-size: 12px;
+    line-height: 1.3;
+    padding: 5px 6px;
 }
 
 .site-footer .counter-row {
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
-    min-height: 14px;
+    min-height: 17px;
 }
-
-
-/* =========================================================
-   PESAN PENUTUP
-   ========================================================= */
 
 .site-footer .message-area {
     max-width: 1100px;
-
     margin: 0 auto;
-
-    padding: 0 10px;
+    padding: 0 16px;
 }
 
 .site-footer .red-line {
     width: 100%;
-
     height: 1px;
-
     background: #e31e24;
 }
 
 .site-footer .message {
-    min-height: 45px;
-
+    min-height: 52px;
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     color: #e31e24;
-
-    font-size: 13px;
-
+    font-size: 15px;
     font-weight: 600;
-
     text-align: center;
-
-    padding: 5px 10px;
-
+    padding: 8px 10px;
     border-bottom: 1px solid #eeeeee;
 }
 
-
-/* =========================================================
-   COPYRIGHT
-   ========================================================= */
-
 .site-footer .copyright {
     width: 100%;
-
-    min-height: 48px;
-
+    min-height: 52px;
     background: #fafafa;
-
     color: #777;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     text-align: center;
-
-    font-size: 11px;
-
+    font-size: 13px;
     font-weight: normal;
-
-    padding: 10px 20px;
+    padding: 12px 20px;
 }
 
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
 @media (max-width: 950px) {
-
     .site-footer .footer-info {
-        grid-template-columns:
-            1.5fr
-            1fr
-            1.2fr;
-
+        grid-template-columns: 1.5fr 1fr 1.2fr;
         gap: 25px;
     }
-
-    /*
-       Pada ukuran ini, 5 kolom sudah terlalu sempit.
-       Jam dan statistik turun ke grid berikutnya.
-    */
-
     .site-footer .hours {
         padding-left: 0;
-
         border-left: 0;
     }
 }
 
-
-/* =========================================================
-   TABLET KECIL
-   ========================================================= */
-
 @media (max-width: 800px) {
-
     .site-footer .footer-info {
         padding: 30px 20px;
-
         grid-template-columns: 1fr 1fr;
-
         gap: 25px;
     }
-
     .site-footer .location {
         grid-column: 1 / 3;
     }
-
-    .site-footer .hours {
-        grid-column: auto;
-
-        padding-left: 0;
-
-        border-left: 0;
-    }
-
+    .site-footer .hours,
     .site-footer .stats {
         grid-column: auto;
     }
-
+    .site-footer .hours {
+        padding-left: 0;
+        border-left: 0;
+    }
     .site-footer .message-area {
         padding: 0 20px;
     }
 }
 
-
-/* =========================================================
-   HP
-   ========================================================= */
-
 @media (max-width: 600px) {
-
     .site-footer .footer-info {
         display: flex;
-
         flex-direction: column;
-
-        gap: 22px;
-
-        padding: 25px 20px;
+        gap: 24px;
+        padding: 28px 20px;
     }
-
     .site-footer .location {
         gap: 15px;
     }
-
     .site-footer .map-box {
         width: 105px;
-
         height: 105px;
-
         flex: 0 0 105px;
     }
-
     .site-footer .hours {
         padding-left: 0;
-
         border-left: 0;
     }
-
     .site-footer .contact-text {
         white-space: normal;
-
         overflow: visible;
-
         text-overflow: clip;
     }
-
+    .site-footer .address {
+        font-size: 14px;
+    }
+    .site-footer .address strong {
+        font-size: 15px;
+    }
+    .site-footer .contact-text,
+    .site-footer .hours {
+        font-size: 14px;
+    }
+    .site-footer .section-title {
+        font-size: 15px;
+    }
     .site-footer .message {
-        min-height: 58px;
-
+        min-height: 60px;
+        font-size: 15px;
         padding: 10px;
+    }
+    .site-footer .copyright {
+        min-height: 55px;
+        font-size: 13px;
+        padding: 12px 16px;
     }
 }
 
-
-/* =========================================================
-   HP KECIL
-   ========================================================= */
-
 @media (max-width: 430px) {
-
     .site-footer .location {
         flex-direction: column;
     }
-
     .site-footer .map-box {
         width: 100%;
-
         height: 130px;
     }
 }
