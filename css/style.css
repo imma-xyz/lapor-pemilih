@@ -82,8 +82,10 @@ main {
 
 .layanan > h2 {
     text-align: center;
+
     font-size: 25px;
     font-weight: 500;
+
     margin-bottom: 45px;
 }
 
@@ -92,7 +94,8 @@ main {
 
 .cek-data {
     text-align: center;
-    margin-bottom: 45px;
+
+    margin-bottom: 55px;
 }
 
 .cek-data-image {
@@ -104,6 +107,7 @@ main {
 
     width: 100%;
     max-width: 500px;
+
     height: auto;
 
     margin: 0 auto 10px;
@@ -112,12 +116,12 @@ main {
 .cek-data-button {
     display: inline-block;
 
-    padding: 15px 30px;
+    padding: 10px 22px;
 
     background: #e31e24;
-    color: white;
+    color: #fff;
 
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 
     border-radius: 2px;
@@ -129,120 +133,90 @@ main {
     background: #c9181d;
 }
 
-/* ================= DAFTAR LAPOR ================= */
+
+/* ================= DAFTAR LAYANAN ================= */
 
 .lapor-list {
     display: grid;
 
-    /* 4 kolom */
     grid-template-columns: repeat(4, 1fr);
 
-    gap: 15px;
+    gap: 15px 25px;
 }
 
 
-/* ================= LINK LAYANAN TEKS ================= */
+/* ================= ITEM LAYANAN ================= */
 
-.lapor-list > a {
-    min-height: 100px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid #dddddd;
-
-    padding: 20px 15px;
-
+.layanan-item {
     text-align: center;
 
-    font-size: 14px;
-    font-weight: 600;
+    border: 1px solid #e5e5e5;
 
-    line-height: 1.4;
+    padding: 10px 10px 15px;
+
+    background: #fff;
 
     transition: 0.2s;
 }
 
+.layanan-item:hover {
+    border-color: #d8d8d8;
 
-/* Hanya link layanan teks yang mendapat hover */
-
-.lapor-list > a:hover {
-    background: #f7f7f7;
-    border-color: #e31e24;
+    background: #fafafa;
 }
 
 
-/* Subtitle khusus layanan teks */
-
-.lapor-list > a span {
-    display: block;
-
-    font-size: 12px;
-    font-weight: normal;
-
-    margin-top: 4px;
-}
-
-
-/* ================= ITEM LAYANAN DENGAN GAMBAR ================= */
-
-.layanan-item {
-    text-align: center;
-}
-
-
-/* Gambar Canva */
+/* ================= GAMBAR ================= */
 
 .layanan-item img {
     display: block;
 
     width: 100%;
+
     height: auto;
 
-    margin-bottom: 2px;
+    margin: 0 auto 8px;
 }
 
 
-/* Link teks di bawah gambar */
+/* ================= JUDUL ================= */
 
 .layanan-item > a:last-child {
     display: block;
 
     font-family: "Poppins", Arial, sans-serif;
 
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 14px;
 
-    line-height: 1.4;
+    font-weight: 600;
 
-    letter-spacing: 0.2px;
+    line-height: 1.35;
+
+    letter-spacing: 0.1px;
+
+    color: #222;
 }
-
-
-/* Hover hanya mengubah warna tulisan */
 
 .layanan-item > a:last-child:hover {
     color: #e31e24;
 }
 
 
-/* Subtitle seperti (USIA 17+) */
+/* ================= SUBTITLE ================= */
 
 .layanan-item small {
     display: block;
 
     font-family: "Poppins", Arial, sans-serif;
 
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 11px;
+
+    font-weight: 500;
+
+    color: #666;
 
     margin-top: 3px;
-
-    letter-spacing: 0.2px;
 }
-
 
 /* ================= STATISTIK PELAPORAN ================= */
 
