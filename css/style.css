@@ -120,7 +120,7 @@ main {
     gap: 15px;
 }
 
-.lapor-list a {
+.lapor-list > a {
     min-height: 100px;
 
     display: flex;
@@ -154,6 +154,43 @@ main {
     font-weight: normal;
 
     margin-top: 4px;
+}
+
+/* ================= ITEM LAYANAN DENGAN GAMBAR ================= */
+
+.layanan-item {
+    text-align: center;
+}
+
+.layanan-item img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 12px;
+}
+
+.layanan-item > a:last-child {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+.layanan-item > a:last-child:hover {
+    color: #e31e24;
+}
+
+.layanan-item small {
+    display: block;
+
+    font-size: 12px;
+    font-weight: normal;
+
+    margin-top: 2px;
 }
 
 
