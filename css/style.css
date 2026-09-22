@@ -171,9 +171,13 @@ main {
 
 .layanan-item > a:last-child {
     display: block;
-    font-size: 14px;
-    font-weight: 600;
+
+    font-size: 15px;
+    font-weight: 700;
+
     line-height: 1.4;
+
+    letter-spacing: 0.2px;
 }
 
 .layanan-item > a:last-child:hover {
@@ -182,9 +186,18 @@ main {
 
 .layanan-item small {
     display: block;
-    font-size: 12px;
-    font-weight: normal;
-    margin-top: 2px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-top: 3px;
+
+    letter-spacing: 0.2px;
+}
+
+.layanan-item > a:last-child,
+.layanan-item small {
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 /* ================= STATISTIK PELAPORAN ================= */
