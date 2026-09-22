@@ -332,7 +332,7 @@ main {
     background: #fff;
     color: #222;
     font-family: Arial, sans-serif;
-    font-size: 12px;
+    border-top: 1px solid #eeeeee;
 }
 
 
@@ -341,21 +341,17 @@ main {
 .site-footer .footer-info {
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto;
-
-    padding: 25px 5px 55px;
+    margin: auto;
+    padding: 45px 30px 50px;
 }
 
 
-/* 3 KOLOM ATAS */
+/* ================= BAGIAN ATAS FOOTER ================= */
 
 .site-footer .info-top {
     display: grid;
-
-    grid-template-columns: 1.05fr 1fr 1fr;
-
-    column-gap: 55px;
-
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
     align-items: start;
 }
 
@@ -364,46 +360,38 @@ main {
 
 .site-footer .location {
     display: flex;
-
     align-items: flex-start;
-
-    gap: 25px;
+    gap: 20px;
 }
-
 
 .site-footer .map-box {
-    width: 125px;
-    height: 130px;
-
-    flex: 0 0 125px;
-
+    width: 120px;
+    height: 120px;
+    flex: 0 0 120px;
     overflow: hidden;
+    border: 1px solid #eeeeee;
 }
-
 
 .site-footer .map-box iframe {
     width: 100%;
     height: 100%;
-
     border: 0;
 }
 
-
 .site-footer .address {
-    line-height: 1.45;
-
-    padding-top: 8px;
+    padding-top: 3px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #555;
 }
-
 
 .site-footer .address strong {
     display: block;
-
     font-size: 13px;
-
-    font-style: italic;
-
-    margin-bottom: 2px;
+    font-style: normal;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 5px;
 }
 
 
@@ -411,89 +399,67 @@ main {
 
 .site-footer .contact-list {
     display: flex;
-
     flex-direction: column;
-
     gap: 9px;
-
-    padding-top: 4px;
 }
-
 
 .site-footer .contact-item {
     display: grid;
-
-    grid-template-columns: 32px 1fr;
-
+    grid-template-columns: 26px 1fr;
     align-items: center;
-
+    column-gap: 12px;
     min-height: 24px;
-
-    column-gap: 25px;
 }
-
 
 .site-footer .icon {
     width: 24px;
     height: 24px;
-
     border-radius: 3px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     color: #fff;
-
-    font-size: 14px;
+    font-size: 13px;
 }
-
 
 .site-footer .instagram {
     background: #ed174c;
 }
 
-
 .site-footer .facebook {
     background: #1877f2;
 }
-
 
 .site-footer .youtube {
     background: #ff0000;
 }
 
-
 .site-footer .x {
     background: #000;
 }
-
 
 .site-footer .website {
     background: #000;
 }
 
-
 .site-footer .phone {
     background: #686868;
 }
-
 
 .site-footer .whatsapp {
     background: #16c45b;
 }
 
-
 .site-footer .email {
     background: #686868;
 }
 
-
 .site-footer .contact-text {
-    color: #333;
-
-    line-height: 1.25;
+    color: #555;
+    font-size: 12px;
+    line-height: 1.4;
 }
 
 
@@ -501,31 +467,26 @@ main {
 
 .site-footer .info-bottom {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
-    column-gap: 55px;
-
-    margin-top: 40px;
+    column-gap: 50px;
+    margin-top: 45px;
 }
-
 
 .site-footer .section-title {
-    font-weight: bold;
-
-    margin-bottom: 20px;
-
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 15px;
 }
-
 
 .site-footer .hours {
-    line-height: 1.35;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #555;
 }
 
-
 .site-footer .hours p {
-    margin: 0 0 18px;
+    margin: 0 0 15px;
 }
 
 
@@ -537,23 +498,19 @@ main {
     width: 82px;
     height: 26px;
 
-    border: 1px solid #9b4c42;
+    border: 1px solid #ddd;
+    background: #fafafa;
 
-    background: #8d3428;
-
-    color: #fff;
+    color: #555;
 
     font-size: 9px;
-
     line-height: 1.1;
 
     padding: 3px 4px;
 }
 
-
 .site-footer .counter-row {
     display: flex;
-
     justify-content: space-between;
 }
 
@@ -562,40 +519,31 @@ main {
 
 .site-footer .message-area {
     max-width: 1100px;
-
-    margin: 0 auto;
-
-    padding: 0 0 5px;
+    margin: auto;
+    padding: 0 30px;
 }
-
 
 .site-footer .red-line {
     width: 100%;
-
-    height: 2px;
-
-    background: #8b1717;
+    height: 1px;
+    background: #e31e24;
 }
 
-
 .site-footer .message {
-    height: 73px;
+    min-height: 70px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
-    color: #8b1717;
+    color: #e31e24;
 
-    font-size: 12px;
-
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 500;
 
     text-align: center;
 
-    border-bottom: 2px solid #8b1717;
+    border-bottom: 1px solid #eeeeee;
 }
 
 
@@ -603,56 +551,44 @@ main {
 
 .site-footer .copyright {
     width: 100%;
+    min-height: 55px;
 
-    min-height: 58px;
-
-    background: #781313;
-
-    color: #fff;
+    background: #fafafa;
+    color: #666;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     text-align: center;
 
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: normal;
 
-    font-weight: bold;
-
-    padding: 15px;
+    padding: 15px 20px;
 }
-
 
 /* ================= FOOTER TABLET ================= */
 
 @media (max-width: 800px) {
 
     .site-footer .footer-info {
-        padding: 25px 20px 40px;
+        padding: 40px 20px;
     }
-
 
     .site-footer .info-top {
         grid-template-columns: 1fr;
-
-        row-gap: 30px;
+        row-gap: 35px;
     }
-
 
     .site-footer .info-bottom {
         grid-template-columns: 1fr;
-
-        row-gap: 30px;
-
+        row-gap: 35px;
         margin-top: 35px;
     }
 
-
     .site-footer .message-area {
-        margin: 0 20px;
+        padding: 0 20px;
     }
 
 }
@@ -660,37 +596,34 @@ main {
 
 /* ================= FOOTER HP ================= */
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+
+    .lapor-list {
+        grid-template-columns: 1fr;
+    }
 
     .site-footer {
         font-size: 11px;
     }
 
-
     .site-footer .map-box {
-        width: 110px;
-        height: 115px;
-
-        flex-basis: 110px;
+        width: 105px;
+        height: 110px;
+        flex-basis: 105px;
     }
-
 
     .site-footer .location {
-        gap: 14px;
+        gap: 15px;
     }
-
 
     .site-footer .contact-item {
-        grid-template-columns: 30px 1fr;
-
-        column-gap: 15px;
+        grid-template-columns: 26px 1fr;
+        column-gap: 12px;
     }
 
-
     .site-footer .message {
-        height: 65px;
-
-        padding: 0 10px;
+        min-height: 65px;
+        padding: 10px;
     }
 
 }
