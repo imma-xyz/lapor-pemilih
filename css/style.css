@@ -120,6 +120,9 @@ main {
     gap: 15px;
 }
 
+
+/* ================= LINK LAYANAN TEKS ================= */
+
 .lapor-list > a {
     min-height: 100px;
 
@@ -142,10 +145,16 @@ main {
     transition: 0.2s;
 }
 
+
+/* Hanya link layanan teks yang mendapat hover */
+
 .lapor-list > a:hover {
     background: #f7f7f7;
     border-color: #e31e24;
 }
+
+
+/* Subtitle khusus layanan teks */
 
 .lapor-list > a span {
     display: block;
@@ -156,44 +165,64 @@ main {
     margin-top: 4px;
 }
 
+
 /* ================= ITEM LAYANAN DENGAN GAMBAR ================= */
 
 .layanan-item {
     text-align: center;
 }
 
+
+/* Gambar Canva */
+
 .layanan-item img {
     display: block;
+
     width: 100%;
     height: auto;
+
     margin-bottom: 12px;
 }
+
+
+/* Link teks di bawah gambar */
 
 .layanan-item > a:last-child {
     display: block;
 
     font-family: "Poppins", Arial, sans-serif;
+
     font-size: 17px;
     font-weight: 700;
 
     line-height: 1.4;
+
     letter-spacing: 0.2px;
 }
+
+
+/* Hover hanya mengubah warna tulisan */
 
 .layanan-item > a:last-child:hover {
     color: #e31e24;
 }
 
+
+/* Subtitle seperti (USIA 17+) */
+
 .layanan-item small {
     display: block;
 
     font-family: "Poppins", Arial, sans-serif;
+
     font-size: 14px;
     font-weight: 600;
 
     margin-top: 3px;
+
     letter-spacing: 0.2px;
 }
+
 
 /* ================= STATISTIK PELAPORAN ================= */
 
@@ -250,6 +279,7 @@ main {
     gap: 20px;
 
     max-width: 900px;
+
     margin: auto;
 }
 
@@ -262,13 +292,15 @@ main {
 }
 
 
-/* item ketiga berada di tengah */
+/* Item ketiga berada di tengah */
 
 .rekap-item:nth-child(3) {
     grid-column: 1 / 3;
 
     width: 100%;
+
     min-height: 460px;
+
     margin: 0;
 }
 
@@ -453,6 +485,7 @@ footer span {
 
     .rekap-item:nth-child(3) {
         grid-column: auto;
+
         width: 100%;
     }
 
