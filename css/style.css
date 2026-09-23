@@ -508,7 +508,7 @@ main {
     padding: 32px 0 24px;
     display: grid;
     grid-template-columns: 42% 29% 29%;
-    grid-template-rows: 155px 190px;
+    grid-template-rows: 175px 185px;
     row-gap: 0;
     column-gap: 0;
 }
@@ -534,7 +534,7 @@ main {
     grid-column: 2;
     grid-row: 1;
     min-width: 0;
-    height: 250px;
+    height: 175px;
     padding: 5px 25px;
     border-left: 1px solid #d7dde4;
     font-size: 12px;
