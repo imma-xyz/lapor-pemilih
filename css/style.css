@@ -726,9 +726,17 @@ main {
         grid-column: 1 / 3;
     }
 
+    .site-footer .contact-column {
+        grid-column: 1 / 3;
+        grid-row: auto;
+        padding-left: 0;
+        border-left: 0;
+    }
+
     .site-footer .hours,
     .site-footer .stats {
         grid-column: auto;
+        grid-row: auto;
     }
 
     .site-footer .hours {
@@ -759,7 +767,13 @@ main {
         flex: 0 0 105px;
     }
 
-    .site-footer .hours {
+    .site-footer .hours,
+    .site-footer .stats {
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .site-footer .contact-column {
         padding-left: 0;
         border-left: 0;
     }
