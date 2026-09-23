@@ -507,8 +507,8 @@ main {
     margin: 0 auto;
     padding: 30px 20px 26px;
     display: grid;
-    grid-template-columns: 1.75fr 1.05fr 1.55fr 0.95fr 0.85fr;
-    column-gap: 28px;
+    grid-template-columns: 1.6fr 1.2fr 1.55fr 1fr 0.95fr;
+    column-gap: 24px;
     align-items: start;
 }
 
@@ -520,7 +520,7 @@ main {
 .site-footer .location {
     display: flex;
     align-items: flex-start;
-    gap: 14px;
+    gap: 12px;
     min-width: 0;
 }
 
@@ -604,7 +604,7 @@ main {
 
 .site-footer .hours {
     min-width: 0;
-    padding-left: 15px;
+    padding-left: 20px;
     border-left: 1px solid #eeeeee;
     font-size: 12px;
     line-height: 1.55;
@@ -624,7 +624,8 @@ main {
 
 .site-footer .stats {
     min-width: 0;
-    padding-left: 0;
+    padding-left: 20px;
+    border-left: 1px solid #eeeeee;
 }
 
 .site-footer .stats .section-title {
