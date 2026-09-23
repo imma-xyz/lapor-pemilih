@@ -507,8 +507,8 @@ main {
     margin: 0 auto;
     padding: 30px 20px 26px;
     display: grid;
-    grid-template-columns: 1.6fr 1.2fr 1.55fr 1fr 0.95fr;
-    column-gap: 24px;
+    grid-template-columns: 135px 1.45fr 1.1fr 1.7fr 0.9fr;
+    column-gap: 22px;
     align-items: start;
 }
 
@@ -518,16 +518,12 @@ main {
 }
 
 .site-footer .location {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    min-width: 0;
+    display: contents;
 }
 
 .site-footer .map-box {
     width: 135px;
     height: 115px;
-    flex: 0 0 135px;
     overflow: hidden;
     border: 1px solid #dddddd;
 }
@@ -563,9 +559,30 @@ main {
     min-width: 0;
 }
 
+.site-footer .contact-list:nth-of-type(2) {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.site-footer .contact-list:nth-of-type(3) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.site-footer .contact-list .contact-text {
+    color: #555;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.45;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    overflow-wrap: anywhere;
+}
+
 .site-footer .contact-item {
     display: grid;
-    grid-template-columns: 31px 1fr;
+    grid-template-columns: 31px minmax(0, 1fr);
     align-items: center;
     column-gap: 10px;
     min-height: 31px;
@@ -591,16 +608,6 @@ main {
 .site-footer .phone { background: #686868; }
 .site-footer .whatsapp { background: #16c45b; }
 .site-footer .email { background: #686868; }
-
-.site-footer .contact-text {
-    color: #555;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.45;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 
 .site-footer .hours {
     min-width: 0;
