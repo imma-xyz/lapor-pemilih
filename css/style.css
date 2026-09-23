@@ -507,25 +507,20 @@ main {
     margin: 0 auto;
     padding: 30px 20px 26px;
     display: grid;
-    grid-template-columns: 135px 1.45fr 1.1fr 1.7fr 0.9fr;
-    column-gap: 22px;
-    align-items: start;
-}
-
-.site-footer .info-top,
-.site-footer .info-bottom {
-    display: contents;
-}
-
-.site-footer .location {
-    display: contents;
+    grid-template-columns: 1.05fr 1.25fr 1.15fr 1.15fr 1.15fr 1.15fr 1.15fr 1.15fr 1.15fr 1.15fr 1.15fr 1.15fr;
+    grid-template-rows: 190px 220px;
+    column-gap: 0;
+    row-gap: 0;
 }
 
 .site-footer .map-box {
-    width: 135px;
-    height: 115px;
+    grid-column: 1 / 5;
+    grid-row: 1 / 3;
+    width: calc(100% - 22px);
+    height: 220px;
     overflow: hidden;
     border: 1px solid #dddddd;
+    align-self: start;
 }
 
 .site-footer .map-box iframe {
@@ -536,31 +531,63 @@ main {
 }
 
 .site-footer .address {
-    padding-top: 1px;
-    font-size: 12px;
-    line-height: 1.55;
-    color: #555;
+    grid-column: 5 / 9;
+    grid-row: 1;
     min-width: 0;
+    height: 190px;
+    padding: 4px 24px;
+    border-left: 1px solid #e1e4e8;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #555;
 }
 
 .site-footer .address strong {
     display: block;
-    font-size: 13px;
+    margin-bottom: 12px;
+    font-size: 16px;
     line-height: 1.4;
     font-weight: 600;
     color: #222;
-    margin-bottom: 8px;
 }
 
- .site-footer .contact-column {
-    grid-column: 4;
+.site-footer .hours {
+    grid-column: 9 / 13;
     grid-row: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
     min-width: 0;
-    padding-left: 20px;
-    border-left: 1px solid #eeeeee;
+    height: 190px;
+    padding: 4px 24px;
+    border-left: 1px solid #e1e4e8;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.site-footer .section-title {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 600;
+    color: #222;
+}
+
+.site-footer .hours p {
+    margin: 0 0 14px;
+}
+
+.site-footer .social-contact {
+    grid-column: 5 / 10;
+    grid-row: 2;
+    min-width: 0;
+    padding: 24px 24px 0;
+    border-top: 1px solid #e1e4e8;
+}
+
+.site-footer .social-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.35fr;
+    gap: 28px;
+    min-width: 0;
 }
 
 .site-footer .contact-list {
@@ -570,7 +597,17 @@ main {
     min-width: 0;
 }
 
-.site-footer .contact-list .contact-text {
+.site-footer .contact-item {
+    display: grid;
+    grid-template-columns: 31px minmax(0, 1fr);
+    align-items: center;
+    column-gap: 10px;
+    min-height: 31px;
+    min-width: 0;
+}
+
+.site-footer .contact-text {
+    min-width: 0;
     color: #555;
     font-size: 12px;
     font-weight: 500;
@@ -579,15 +616,6 @@ main {
     overflow: visible;
     text-overflow: clip;
     overflow-wrap: anywhere;
-}
-
-.site-footer .contact-item {
-    display: grid;
-    grid-template-columns: 31px minmax(0, 1fr);
-    align-items: center;
-    column-gap: 10px;
-    min-height: 31px;
-    min-width: 0;
 }
 
 .site-footer .icon {
@@ -610,34 +638,13 @@ main {
 .site-footer .whatsapp { background: #16c45b; }
 .site-footer .email { background: #686868; }
 
-.site-footer .hours {
-    grid-column: 3;
-    grid-row: 1;
-    min-width: 0;
-    padding-left: 20px;
-    border-left: 1px solid #eeeeee;
-    font-size: 12px;
-    line-height: 1.55;
-    color: #555;
-}
-
-.site-footer .section-title {
-    font-size: 13px;
-    font-weight: 600;
-    color: #222;
-    margin-bottom: 10px;
-}
-
-.site-footer .hours p {
-    margin: 0 0 10px;
-}
-
 .site-footer .stats {
-    grid-column: 5;
-    grid-row: 1;
+    grid-column: 10 / 13;
+    grid-row: 2;
     min-width: 0;
-    padding-left: 20px;
-    border-left: 1px solid #eeeeee;
+    padding: 24px 0 0 24px;
+    border-top: 1px solid #e1e4e8;
+    border-left: 1px solid #e1e4e8;
 }
 
 .site-footer .stats .section-title {
@@ -645,21 +652,34 @@ main {
 }
 
 .site-footer .counter {
-    display: block;
-    width: 110px;
-    border: 1px solid #ddd;
-    background: #fafafa;
+    width: 100%;
+    max-width: 260px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #f5f7fa;
+    border-radius: 3px;
+    overflow: hidden;
     color: #555;
-    font-size: 11px;
-    line-height: 1.4;
-    padding: 5px 6px;
 }
 
 .site-footer .counter-row {
+    min-height: 78px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    min-height: 18px;
+    justify-content: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.site-footer .counter-row + .counter-row {
+    border-left: 1px solid #dfe3e8;
+}
+
+.site-footer .counter-row strong {
+    font-size: 20px;
+    line-height: 1;
+    color: #222;
 }
 
 .site-footer .message-area {
@@ -705,43 +725,72 @@ main {
 
 @media (max-width: 950px) {
     .site-footer .footer-info {
-        grid-template-columns: 1.5fr 1fr 1.2fr;
-        gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 180px 230px;
     }
 
+    .site-footer .map-box {
+        width: calc(100% - 16px);
+        height: 210px;
+    }
+
+    .site-footer .address,
     .site-footer .hours {
-        padding-left: 0;
-        border-left: 0;
+        height: 180px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .site-footer .social-contact {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .site-footer .stats {
+        padding-left: 18px;
     }
 }
 
 @media (max-width: 800px) {
     .site-footer .footer-info {
-        padding: 30px 20px;
+        display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 25px;
+        grid-template-rows: auto;
+        gap: 24px;
+        padding: 28px 20px;
     }
 
-    .site-footer .location {
-        grid-column: 1 / 3;
-    }
-
-    .site-footer .contact-column {
+    .site-footer .map-box {
         grid-column: 1 / 3;
         grid-row: auto;
-        padding-left: 0;
-        border-left: 0;
+        width: 100%;
+        height: 190px;
     }
 
+    .site-footer .address,
     .site-footer .hours,
+    .site-footer .social-contact,
     .site-footer .stats {
         grid-column: auto;
         grid-row: auto;
+        height: auto;
+        border-left: 0;
+        border-top: 0;
+        padding: 0;
     }
 
-    .site-footer .hours {
-        padding-left: 0;
-        border-left: 0;
+    .site-footer .social-contact {
+        grid-column: 1 / 3;
+        padding-top: 0;
+    }
+
+    .site-footer .social-contact-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .site-footer .stats {
+        grid-column: 1 / 3;
     }
 
     .site-footer .message-area {
@@ -757,48 +806,32 @@ main {
         padding: 28px 20px;
     }
 
-    .site-footer .location {
-        gap: 15px;
-    }
-
     .site-footer .map-box {
-        width: 105px;
-        height: 105px;
-        flex: 0 0 105px;
+        width: 100%;
+        height: 180px;
     }
 
-    .site-footer .hours,
-    .site-footer .stats {
-        padding-left: 0;
-        border-left: 0;
+    .site-footer .social-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
 
-    .site-footer .contact-column {
-        padding-left: 0;
-        border-left: 0;
+    .site-footer .address strong,
+    .site-footer .section-title {
+        font-size: 15px;
     }
 
-    .site-footer .contact-text {
-        white-space: normal;
-        overflow: visible;
-        text-overflow: clip;
-    }
-
-    .site-footer .address {
-        font-size: 12px;
-    }
-
-    .site-footer .address strong {
-        font-size: 13px;
-    }
-
-    .site-footer .contact-text,
+    .site-footer .address,
     .site-footer .hours {
         font-size: 12px;
     }
 
-    .site-footer .section-title {
-        font-size: 13px;
+    .site-footer .contact-text {
+        font-size: 12px;
+    }
+
+    .site-footer .counter {
+        max-width: 100%;
     }
 
     .site-footer .message {
@@ -815,13 +848,8 @@ main {
 }
 
 @media (max-width: 430px) {
-    .site-footer .location {
-        flex-direction: column;
-    }
-
     .site-footer .map-box {
-        width: 100%;
-        height: 130px;
+        height: 160px;
     }
 }
 
