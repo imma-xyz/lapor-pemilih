@@ -237,64 +237,27 @@
 
             <h2>
                 STATISTIK LAPORAN PEMILIH MANDIRI
-                <span>BULAN [nama bulan] [tahun]</span>
+                <span id="statistik-periode">BULAN SEPTEMBER 2026</span>
             </h2>
 
             <div class="statistik-filter">
-                <div class="statistik-filter-item">
-                    <label for="statistik-mulai">Dari</label>
-                    <input type="date" id="statistik-mulai" aria-label="Tanggal mulai statistik">
-                </div>
-                <div class="statistik-filter-item">
-                    <label for="statistik-selesai">Sampai</label>
-                    <input type="date" id="statistik-selesai" aria-label="Tanggal selesai statistik">
-                </div>
-                <button type="button" class="statistik-reset" id="statistik-reset">Semua Periode</button>
-            </div>
-            </div>
+                <button type="button" class="statistik-filter-button active" id="statistik-bulan">
+                    <span id="statistik-bulan-label">September 2026</span>
+                </button>
+                <button type="button" class="statistik-filter-button" id="statistik-semua">
+                    Semua Laporan
+                </button>
             </div>
 
             <div class="statistik-content">
-                <div class="stat-bar">
-                    <div class="stat-bar-label">Pemilih Baru (17+)</div>
-                    <div class="stat-bar-track"><span style="width: 0%"></span></div>
-                    <strong>--</strong>
-                </div>
-                <div class="stat-bar">
-                    <div class="stat-bar-label">Pemilih Meninggal Dunia</div>
-                    <div class="stat-bar-track"><span style="width: 0%"></span></div>
-                    <strong>--</strong>
-                </div>
-                <div class="stat-bar">
-                    <div class="stat-bar-label">Pemilih Berstatus TNI/Polri</div>
-                    <div class="stat-bar-track"><span style="width: 0%"></span></div>
-                    <strong>--</strong>
-                </div>
-                <div class="stat-bar">
-                    <div class="stat-bar-label">Pemilih Purnawirawan TNI/Polri</div>
-                    <div class="stat-bar-track"><span style="width: 0%"></span></div>
-                    <strong>--</strong>
-                </div>
-                <div class="stat-bar">
-                    <div class="stat-bar-label">Pemilih Pindah Masuk</div>
-                    <div class="stat-bar-track"><span style="width: 0%"></span></div>
-                    <strong>--</strong>
-                </div>
-                <div class="stat-bar">
-                    <div class="stat-bar-label">Pemilih Pindah Keluar</div>
-                    <div class="stat-bar-track"><span style="width: 0%"></span></div>
-                    <strong>--</strong>
-                </div>
-                <div class="stat-bar">
-                    <div class="stat-bar-label">Pemilih Disabilitas</div>
-                    <div class="stat-bar-track"><span style="width: 0%"></span></div>
-                    <strong>--</strong>
-                </div>
-                <div class="stat-bar">
-                    <div class="stat-bar-label">Pemilih < 17 (Sudah Menikah)</div>
-                    <div class="stat-bar-track"><span style="width: 0%"></span></div>
-                    <strong>--</strong>
-                </div>
+                <div class="stat-bar"><div class="stat-bar-label">Pemilih Baru (17+)</div><div class="stat-bar-track"><span></span></div><strong>--</strong></div>
+                <div class="stat-bar"><div class="stat-bar-label">Pemilih Meninggal</div><div class="stat-bar-track"><span></span></div><strong>--</strong></div>
+                <div class="stat-bar"><div class="stat-bar-label">Pemilih Berstatus TNI/Polri</div><div class="stat-bar-track"><span></span></div><strong>--</strong></div>
+                <div class="stat-bar"><div class="stat-bar-label">Purnawirawan TNI/Polri</div><div class="stat-bar-track"><span></span></div><strong>--</strong></div>
+                <div class="stat-bar"><div class="stat-bar-label">Pemilih Pindah Masuk</div><div class="stat-bar-track"><span></span></div><strong>--</strong></div>
+                <div class="stat-bar"><div class="stat-bar-label">Pemilih Pindah Keluar</div><div class="stat-bar-track"><span></span></div><strong>--</strong></div>
+                <div class="stat-bar"><div class="stat-bar-label">Pemilih Penyandang Disabilitas</div><div class="stat-bar-track"><span></span></div><strong>--</strong></div>
+                <div class="stat-bar"><div class="stat-bar-label">Pemilih di bawah 17 tahun tetapi sudah menikah</div><div class="stat-bar-track"><span></span></div><strong>--</strong></div>
             </div>
 
         </section>
@@ -458,6 +421,8 @@
             </div>
 
         </footer>
+
+        <script src="js/statistik.js"></script>
 
 </body>
 
