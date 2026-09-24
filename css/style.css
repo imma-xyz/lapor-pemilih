@@ -618,6 +618,12 @@ main {
     gap: 10px;
 }
 
+.statistik-filter-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .statistik-filter label {
     color: #66717f;
     font-size: 12px;
@@ -715,8 +721,12 @@ main {
         align-items: stretch;
     }
 
+    .statistik-filter-item {
+        justify-content: space-between;
+    }
+
     .statistik-filter select {
-        width: 100%;
+        width: 155px;
     }
 
     .stat-bar {
