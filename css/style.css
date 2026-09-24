@@ -423,7 +423,6 @@ main {
 }
 
 .layanan > h2,
-.statistik > h2,
 .rekapitulasi > h2 {
     position: relative;
     text-align: center;
@@ -434,7 +433,6 @@ main {
 }
 
 .layanan > h2::after,
-.statistik > h2::after,
 .rekapitulasi > h2::after {
     content: "";
     display: block;
@@ -595,55 +593,21 @@ main {
     padding: 60px 30px 80px;
 }
 
+.statistik > h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
 .statistik-content {
     width: 100%;
-    max-width: 1000px;
-    min-height: 0;
-    margin: 0 auto;
-    padding: 22px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    border: 1px solid #e1e6ec;
-    background: #f8fafc;
-}
-
-.stat-card {
-    min-height: 145px;
-    padding: 24px 18px;
+    min-height: 300px;
+    border: 1px solid #eeeeee;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    background: #fff;
-    border: 1px solid #e3e8ee;
-    border-top: 3px solid #26364e;
-}
-
-.stat-card:nth-child(2) {
-    border-top-color: #e31e24;
-}
-
-.stat-card span {
-    color: #66717f;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: .8px;
-}
-
-.stat-card strong {
-    margin: 8px 0 5px;
-    color: #26364e;
-    font-size: 36px;
-    line-height: 1;
-    font-weight: 700;
-}
-
-.stat-card small {
-    color: #8993a0;
-    font-size: 10px;
-    line-height: 1.4;
+    background: #fafafa;
 }
 
 
@@ -713,7 +677,6 @@ main {
     }
 
     .layanan > h2,
-    .statistik > h2,
     .rekapitulasi > h2 {
         font-size: 21px;
         margin-bottom: 32px;
@@ -726,15 +689,6 @@ main {
 
     .statistik {
         padding: 45px 20px 65px;
-    }
-
-    .statistik-content {
-        grid-template-columns: 1fr;
-        padding: 15px;
-    }
-
-    .stat-card {
-        min-height: 120px;
     }
 
     .rekapitulasi {
@@ -784,13 +738,7 @@ main {
         font-size: 12px;
     }
 
-    .statistik-content {
-        padding: 10px;
-    }
 
-    .stat-card strong {
-        font-size: 30px;
-    }
 }
 
 /* =========================================================
