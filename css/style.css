@@ -1012,7 +1012,7 @@ main {
     grid-column: 1 / 3;
     grid-row: 2;
     min-width: 0;
-    padding: 22px 0 0;
+    padding: 22px 0 0 25px;
     border-top: 1px solid #d7dde4;
 }
 
@@ -1088,7 +1088,7 @@ main {
     grid-column: 3;
     grid-row: 2;
     min-width: 0;
-    padding: 22px 0 0 25px;
+    padding: 22px 25px 0 25px;
     border-top: 1px solid #d7dde4;
     border-left: 1px solid #d7dde4;
 }
