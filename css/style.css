@@ -630,15 +630,22 @@ main {
     font-weight: 600;
 }
 
-.statistik-filter select {
+.statistik-filter select,
+.statistik-filter input[type="month"] {
     min-width: 155px;
-    padding: 9px 12px;
+    height: 36px;
+    padding: 8px 12px;
     border: 1px solid #dce2e8;
     background: #fff;
     color: #26364e;
     font-family: "Poppins", Arial, sans-serif;
     font-size: 12px;
     border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.statistik-filter input[type="month"] {
+    cursor: pointer;
 }
 
 .statistik-content {
@@ -725,7 +732,8 @@ main {
         justify-content: space-between;
     }
 
-    .statistik-filter select {
+    .statistik-filter select,
+    .statistik-filter input[type="month"] {
         width: 155px;
     }
 
