@@ -631,7 +631,8 @@ main {
 }
 
 .statistik-filter select,
-.statistik-filter input[type="month"] {
+.statistik-filter input[type="month"],
+.statistik-filter input[type="date"] {
     min-width: 155px;
     height: 36px;
     padding: 8px 12px;
@@ -644,8 +645,25 @@ main {
     box-sizing: border-box;
 }
 
-.statistik-filter input[type="month"] {
+.statistik-filter input[type="month"],
+.statistik-filter input[type="date"] {
     cursor: pointer;
+}
+
+.statistik-reset {
+    height: 36px;
+    padding: 8px 13px;
+    border: 1px solid #dce2e8;
+    background: #fff;
+    color: #26364e;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.statistik-reset:hover {
+    border-color: #26364e;
 }
 
 .statistik-content {
@@ -733,7 +751,12 @@ main {
     }
 
     .statistik-filter select,
-    .statistik-filter input[type="month"] {
+    .statistik-filter input[type="month"],
+    .statistik-filter input[type="date"] {
+        width: 155px;
+    }
+
+    .statistik-reset {
         width: 155px;
     }
 
