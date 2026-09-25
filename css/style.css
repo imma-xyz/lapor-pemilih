@@ -605,6 +605,15 @@ main {
     color: #26364e;
 }
 
+.statistik > h2::after {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 3px;
+    margin: 12px auto 0;
+    background: #e31e24;
+}
+
 .statistik > h2 span {
     display: block;
     color: #7a8593;
