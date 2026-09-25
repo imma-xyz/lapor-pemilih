@@ -548,6 +548,20 @@ main {
     transform: translateY(-2px);
 }
 
+.layanan-item:hover {
+    border-bottom: 3px solid #e31e24;
+}
+
+.layanan::before {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 3px;
+    margin: -20px auto 32px;
+    background: #e31e24;
+}
+
+
 .layanan-item img {
     display: block;
     width: 100%;
@@ -1394,6 +1408,49 @@ main {
 
     .main-nav > a,
     .main-nav .nav-dropdown-toggle {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   SCROLL TO TOP
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e31e24;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(20, 35, 55, .16);
+    font-size: 14px;
+    z-index: 900;
+    transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+.scroll-top:hover {
+    background: #c9181d;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(20, 35, 55, .20);
+}
+
+@media (max-width: 480px) {
+    .scroll-top {
+        right: 16px;
+        bottom: 16px;
+        width: 36px;
+        height: 36px;
         font-size: 12px;
     }
 }
